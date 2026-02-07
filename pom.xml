@@ -128,7 +128,7 @@ Supported protocols include Echo, Finger, FTP, NNTP, NTP, POP3(S), SMTP(S), Teln
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.20.0</version>
+            <version>2.21.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -227,51 +227,42 @@ Supported protocols include Echo, Finger, FTP, NNTP, NTP, POP3(S), SMTP(S), Teln
                         <configuration>
                             <target>
                                 <jar destfile="target/commons-net-ftp-${project.version}.jar" modificationtime="${project.build.outputTimestamp}">
-                                    <metainf dir="${basedir}" includes="NOTICE.txt,LICENSE.txt" />
+                                    <metainf dir="${basedir}" includes="NOTICE.txt,LICENSE.txt"/>
                                     <manifest>
                                         <attribute name="Created-By" value="maven-antrun-plugin"/>
-                                        <attribute name="Extension-Name" value="org.apache.commons.net" />
-                                        <attribute name="Specification-Title" value="${project.name}" />
-                                        <attribute name="Implementation-Title" value="${project.name}" />
-                                        <attribute name="Implementation-Vendor"
-                                            value="${project.organization.name}" />
-                                        <attribute name="Implementation-Version" value="${project.version}" />
-                                        <attribute name="Implementation-Vendor-Id" value="org.apache" />
-                                        <attribute name="Implementation-Build" value="${implementation.build}" />
-                                        <attribute name="X-Compile-Source-JDK"
-                                            value="${maven.compiler.source}" />
-                                        <attribute name="X-Compile-Target-JDK"
-                                            value="${maven.compiler.target}" />
+                                        <attribute name="Extension-Name" value="org.apache.commons.net"/>
+                                        <attribute name="Specification-Title" value="${project.name}"/>
+                                        <attribute name="Implementation-Title" value="${project.name}"/>
+                                        <attribute name="Implementation-Vendor" value="${project.organization.name}"/>
+                                        <attribute name="Implementation-Version" value="${project.version}"/>
+                                        <attribute name="Implementation-Vendor-Id" value="org.apache"/>
+                                        <attribute name="Implementation-Build" value="${implementation.build}"/>
+                                        <attribute name="X-Compile-Source-JDK" value="${maven.compiler.source}"/>
+                                        <attribute name="X-Compile-Target-JDK" value="${maven.compiler.target}"/>
                                     </manifest>
-                                    <fileset dir="target/classes"
-                                        includes="org/apache/commons/net/ftp/**,org/apache/commons/net/*,org/apache/commons/net/io/*,org/apache/commons/net/util/*" />
+                                    <fileset dir="target/classes" includes="org/apache/commons/net/ftp/**,org/apache/commons/net/*,org/apache/commons/net/io/*,org/apache/commons/net/util/*"/>
                                 </jar>
                                 <!-- Create the binary examples jar, which will be added to the binary zip/tgz, but not deployed 
                                     independently to Maven -->
                                 <jar destfile="target/commons-net-examples-${project.version}.jar" modificationtime="${project.build.outputTimestamp}">
-                                    <metainf dir="${basedir}" includes="NOTICE.txt,LICENSE.txt" />
+                                    <metainf dir="${basedir}" includes="NOTICE.txt,LICENSE.txt"/>
                                     <manifest>
                                         <attribute name="Created-By" value="maven-antrun-plugin"/>
-                                        <attribute name="Extension-Name" value="org.apache.commons.net" />
-                                        <attribute name="Specification-Title" value="${project.name}" />
-                                        <attribute name="Implementation-Title" value="${project.name}" />
-                                        <attribute name="Implementation-Vendor"
-                                            value="${project.organization.name}" />
-                                        <attribute name="Implementation-Version" value="${project.version}" />
-                                        <attribute name="Implementation-Vendor-Id" value="org.apache" />
-                                        <attribute name="Implementation-Build" value="${implementation.build}" />
-                                        <attribute name="X-Compile-Source-JDK"
-                                            value="${maven.compiler.source}" />
-                                        <attribute name="X-Compile-Target-JDK"
-                                            value="${maven.compiler.target}" />
+                                        <attribute name="Extension-Name" value="org.apache.commons.net"/>
+                                        <attribute name="Specification-Title" value="${project.name}"/>
+                                        <attribute name="Implementation-Title" value="${project.name}"/>
+                                        <attribute name="Implementation-Vendor" value="${project.organization.name}"/>
+                                        <attribute name="Implementation-Version" value="${project.version}"/>
+                                        <attribute name="Implementation-Vendor-Id" value="org.apache"/>
+                                        <attribute name="Implementation-Build" value="${implementation.build}"/>
+                                        <attribute name="X-Compile-Source-JDK" value="${maven.compiler.source}"/>
+                                        <attribute name="X-Compile-Target-JDK" value="${maven.compiler.target}"/>
                                         <!-- Helper application -->
-                                        <attribute name="Main-Class"
-                                            value="org.apache.commons.net.examples.Main" />
+                                        <attribute name="Main-Class" value="org.apache.commons.net.examples.Main"/>
                                         <!-- Allow java -jar examples.jar to work -->
-                                        <attribute name="Class-Path"
-                                            value="commons-net-${project.version}.jar" />
+                                        <attribute name="Class-Path" value="commons-net-${project.version}.jar"/>
                                     </manifest>
-                                    <fileset dir="target/classes" includes="**/examples/**" />
+                                    <fileset dir="target/classes" includes="**/examples/**"/>
                                 </jar>
                             </target>
                         </configuration>
@@ -470,12 +461,12 @@ Supported protocols include Echo, Finger, FTP, NNTP, NTP, POP3(S), SMTP(S), Teln
             <name>Rory Winston</name>
             <id>rwinston</id>
             <email>rwinston@apache.org</email>
-            <organization />
+            <organization/>
         </developer>
         <developer>
             <name>Rory Winston</name>
             <email>rwinston@checkfree.com</email>
-            <organization />
+            <organization/>
         </developer>
         <developer>
           <id>ggregory</id>
